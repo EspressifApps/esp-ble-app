@@ -2,14 +2,14 @@
 
 ESP BLE 是一款 Android 蓝牙应用。授予蓝牙权限后，可以从启动页选择四种工具。
 
-| 工具 | 功能 | 对端设备 |
-| --- | --- | --- |
-| ESL 控制器 | 连接电子价签 AP 网关，管理 Tag、发送控制命令和传输图片 | 运行 `ble_esl_ap`、支持 BLE UART (NUS) 和 JSONL 协议的 ESP32 网关 |
-| Flux 数据传输 | 通过可靠 Flux 协议发送文本和示例数据 | 提供匹配的 Flux GATT 服务的 BLE 设备 |
-| GMP 文件传输 | 通过 GMP 和 Flux 发送所选文件 | GMP 文件接收端，例如 `esp_file_transfer/receiver_demo` |
-| GMP OTA | 通过 GMP 和 Flux 发送固件 `.bin` 文件 | 提供匹配的 GMP OTA 服务的 BLE 设备 |
+| 工具 | 功能 | 对端设备 | 设备端参考代码 |
+| --- | --- | --- | --- |
+| ESL 控制器 | 连接电子价签 AP 网关，管理 Tag、发送控制命令和传输图片 | 运行 `ble_esl_ap`、支持 BLE UART (NUS) 和 JSONL 协议的 ESP32 网关 | [BLE ESL 示例](https://github.com/espressif/esp-iot-solution/tree/master/examples/bluetooth/ble_profiles/ble_esl) |
+| Flux 数据传输 | 通过可靠 Flux 协议发送文本和示例数据 | 提供匹配的 Flux GATT 服务的 BLE 设备 | [BLE SPP 服务端](https://github.com/espressif/esp-iot-solution/tree/master/examples/esp_flux/ble_spp_server) |
+| GMP 文件传输 | 通过 GMP 和 Flux 发送所选文件 | GMP 文件接收端 | [文件传输接收端示例](https://github.com/espressif/esp-iot-solution/tree/master/examples/esp_file_transfer/receiver_demo) |
+| GMP OTA | 通过 GMP 和 Flux 发送固件 `.bin` 文件 | 提供匹配的 GMP OTA 服务的 BLE 设备 | [BLE GMP OTA 服务端](https://github.com/espressif/esp-iot-solution/tree/master/examples/esp_gmp/gmp_ota/ble_gmp_ota_server) |
 
-本仓库只包含 Android 应用，不包含对端固件。在 ESL 模式下，手机通过 BLE 连接 AP 网关，由网关负责与 Tag 进行 PAwR 通信。
+本仓库只包含 Android 应用，不包含对端固件。表中的设备端示例仅供参考，使用时需按应用协议适配。在 ESL 模式下，手机通过 BLE 连接 AP 网关，由网关负责与 Tag 进行 PAwR 通信。
 
 English README: [README.md](README.md).
 
@@ -49,7 +49,7 @@ ESL 的 Mock 传输在 debug 和 release 构建中默认关闭。如需显示**�
 
 ### GMP 文件传输
 
-进入 **GMP 文件传输 → 扫描与连接**，连接兼容的接收端。在**数据传输**页选择文件并点击**发送文件**。`esp-iot-solution` 中的 `esp_file_transfer/receiver_demo` 是参考接收端；**日志**页可查看传输消息。
+进入 **GMP 文件传输 → 扫描与连接**，连接兼容的接收端。在**数据传输**页选择文件并点击**发送文件**。**日志**页可查看传输消息。
 
 ### GMP OTA
 

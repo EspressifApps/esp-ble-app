@@ -2,14 +2,14 @@
 
 ESP BLE is an Android app with four BLE tools. Select a tool from the launcher after granting Bluetooth permissions.
 
-| Tool | What it does | Compatible peer |
-| --- | --- | --- |
-| ESL AP Controller | Connects to an electronic shelf label AP gateway, manages Tags, sends controls, and transfers images | ESP32 `ble_esl_ap` gateway with BLE UART (NUS) and the JSONL protocol |
-| Flux Data Transfer | Sends text and sample payloads over reliable Flux | BLE device with the matching Flux GATT service |
-| GMP File Transfer | Sends a selected file over GMP and Flux | GMP file-transfer receiver, such as `esp_file_transfer/receiver_demo` |
-| GMP OTA | Sends a firmware `.bin` file over GMP and Flux | BLE device with the matching GMP OTA service |
+| Tool | What it does | Compatible peer | Device-side reference |
+| --- | --- | --- | --- |
+| ESL AP Controller | Connects to an electronic shelf label AP gateway, manages Tags, sends controls, and transfers images | ESP32 `ble_esl_ap` gateway with BLE UART (NUS) and the JSONL protocol | [BLE ESL examples](https://github.com/espressif/esp-iot-solution/tree/master/examples/bluetooth/ble_profiles/ble_esl) |
+| Flux Data Transfer | Sends text and sample payloads over reliable Flux | BLE device with the matching Flux GATT service | [BLE SPP server](https://github.com/espressif/esp-iot-solution/tree/master/examples/esp_flux/ble_spp_server) |
+| GMP File Transfer | Sends a selected file over GMP and Flux | GMP file-transfer receiver | [File-transfer receiver demo](https://github.com/espressif/esp-iot-solution/tree/master/examples/esp_file_transfer/receiver_demo) |
+| GMP OTA | Sends a firmware `.bin` file over GMP and Flux | BLE device with the matching GMP OTA service | [BLE GMP OTA server](https://github.com/espressif/esp-iot-solution/tree/master/examples/esp_gmp/gmp_ota/ble_gmp_ota_server) |
 
-The peer firmware is not included in this repository. The ESL AP gateway performs PAwR communication with Tags; the phone connects to the gateway over BLE.
+The peer firmware is not included in this repository. The linked examples are device-side references; adapt them as needed to match this app's protocols. The ESL AP gateway performs PAwR communication with Tags; the phone connects to the gateway over BLE.
 
 中文说明见 [README_CN.md](README_CN.md)。
 
@@ -49,7 +49,7 @@ Open **Flux Data Transfer → Scan & Connect**, scan and connect to a compatible
 
 ### GMP File Transfer
 
-Open **GMP File Transfer → Scan & Connect** and connect to a compatible receiver. In **Transfer**, select a file and choose **Send File**. The `esp_file_transfer/receiver_demo` in `esp-iot-solution` is a reference peer. Use **Logs** to inspect transfer messages.
+Open **GMP File Transfer → Scan & Connect** and connect to a compatible receiver. In **Transfer**, select a file and choose **Send File**. Use **Logs** to inspect transfer messages.
 
 ### GMP OTA
 
