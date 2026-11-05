@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">espbleapp</string>
+
+    <!-- App Launcher -->
+    <string name="launcher_title">Select Program</string>
+    <string name="launcher_subtitle">Choose an application to launch</string>
+    <string name="app_esl_name">ESL</string>
+    <string name="app_esl_desc">Electronic Shelf Label AP Gateway &amp; Tag Controller</string>
+    <string name="app_flux_name">Flux Data Transfer</string>
+    <string name="app_flux_desc">BLE Data transfer via Flux</string>
+    <string name="app_file_transfer_name">GMP File Transfer</string>
+    <string name="app_file_transfer_desc">BLE File transfer via GMP &amp; Flux</string>
+    <string name="app_gmp_ota_name">GMP OTA</string>
+    <string name="app_gmp_ota_desc">BLE OTA Firmware Update via GMP &amp; Flux</string>
+    <string name="back_to_launcher">Back to Launcher</string>
+    <string name="launch_app">Enter</string>
+
+    <!-- GMP OTA App -->
+    <string name="gmp_ota_title">GMP OTA</string>
+
+    <!-- Flux App -->
+    <string name="flux_title">Flux Data Transfer</string>
+    <string name="flux_status_running">Status: Running</string>
+    <string name="flux_nav_dashboard">Dashboard</string>
+    <string name="flux_nav_effects">Effects</string>
+    <string name="flux_nav_settings">Settings</string>
+    <string name="flux_speed_label">Flow Speed: %1$d FPS</string>
+    <string name="flux_intensity_label">Intensity: %1$d%%</string>
+    <string name="flux_mode_aurora">Aurora Wave</string>
+    <string name="flux_mode_pulse">Pulse Flow</string>
+    <string name="flux_mode_neon">Neon Stream</string>
+    <string name="flux_mode_spectrum">Spectrum Shift</string>
+
+    <!-- Flux File Transfer App -->
+    <string name="file_transfer_title">GMP File Transfer</string>
+    <string name="file_select_btn">Select File</string>
+    <string name="file_no_selected">No file selected</string>
+    <string name="file_selected_info">Selected: %1$s (%2$d bytes)</string>
+    <string name="file_send_btn">Send File</string>
+    <string name="flux_nav_scan">Scan &amp; Connect</string>
+    <string name="flux_nav_send">Transfer</string>
+    <string name="flux_nav_logs">Logs</string>
+    <string name="flux_status_connected">Connected</string>
+    <string name="flux_status_disconnected">Disconnected</string>
+    <string name="flux_status_connecting">Connecting...</string>
+    <string name="flux_scan_start">Start Scan</string>
+    <string name="flux_scan_stop">Stop Scan</string>
+    <string name="flux_filter_service">Filter Flux Service (0xABF0)</string>
+    <string name="gmp_filter_service">Filter GMP File Transfer Service (01000008-...)</string>
+    <string name="gmp_ota_filter_service">Filter GMP OTA Service (a0eeffc0-...)</string>
+    <string name="gmp_selected_file">Selected: %1$s</string>
+    <string name="gmp_ready_to_send">Ready to send</string>
+    <string name="gmp_hashing">Hashing file…</string>
+    <string name="gmp_negotiating">Negotiating transfer…</string>
+    <string name="gmp_confirmed_bytes">Confirmed: %1$d / %2$d bytes</string>
+    <string name="gmp_verifying">Verifying transfer…</string>
+    <string name="gmp_complete">Transfer complete</string>
+    <string name="gmp_cancelled">Transfer cancelled</string>
+    <string name="gmp_cancel">Cancel</string>
+    <string name="gmp_peer_rejected">Peer rejected the transfer</string>
+    <string name="gmp_error_low_mtu">MTU is below the required minimum</string>
+    <string name="gmp_error_missing_service">GMP file transfer service not found</string>
+    <string name="gmp_error_missing_characteristic">GMP RX or TX characteristic not found</string>
+    <string name="gmp_error_timeout">Transfer timed out</string>
+    <string name="gmp_error_invalid_name">File name must be 1 to 32 UTF-8 bytes</string>
+    <string name="gmp_stage_idle">Idle</string>
+    <string name="gmp_stage_connecting">Connecting…</string>
+    <string name="gmp_stage_requesting_mtu">Requesting MTU…</string>
+    <string name="gmp_stage_discovering_services">Discovering services…</string>
+    <string name="gmp_stage_enabling_notifications">Enabling notifications…</string>
+    <string name="gmp_stage_ready">Ready</string>
+    <string name="gmp_performance_title">GMP Transfer Metrics</string>
+    <string name="gmp_elapsed_time">Time: %1$d ms</string>
+    <string name="gmp_elapsed_time_sec">Time: %1$.2f s</string>
+    <string name="gmp_avg_throughput">Avg confirmed: %1$.1f KB/s</string>
+    <string name="flux_connected_device">Connected: %1$s (%2$s)</string>
+    <string name="flux_mtu_label">MTU Size: %1$d</string>
+    <string name="flux_disconnect">Disconnect</string>
+    <string name="flux_connect">Connect</string>
+    <string name="flux_send_text_hint">Enter text payload to send via Flux...</string>
+    <string name="flux_send_btn">Send</string>
+    <string name="flux_test_482b">Send 482 B</string>
+    <string name="flux_test_4kb">Send 4 KB</string>
+    <string name="flux_test_16kb">Send 16 KB</string>
+    <string name="flux_progress_label">Transferred: %1$d / %2$d B (%3$d%%) · %4$.1f KB/s</string>
+    <string name="flux_performance_title">Flux Transfer Metrics</string>
+    <string name="flux_elapsed_time">Time: %1$d ms</string>
+    <string name="flux_elapsed_time_sec">Time: %1$.2f s</string>
+    <string name="flux_avg_speed">Avg Speed: %1$.1f KB/s</string>
+    <string name="flux_transferred_size">Data Size: %1$d Bytes</string>
+    <string name="flux_ack_status_confirmed">Full ACK Confirmed</string>
+    <string name="flux_ack_status_waiting">Waiting for ACK...</string>
+    <string name="flux_received_section">Received Reassembled Data</string>
+    <string name="flux_no_devices">No BLE devices found yet. Click \'Start Scan\'.</string>
+    <string name="flux_clear_logs">Clear Logs</string>
+
+    <!-- Navigation -->
+    <string name="nav_connect">Connect</string>
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_tags">Tags</string>
+    <string name="nav_controls">Controls</string>
+    <string name="nav_image">Image</string>
+    <string name="nav_logs">Logs</string>
+    <string name="nav_settings">Settings</string>
+
+    <string name="title_app">ESL AP Controller</string>
+    <string name="title_app_mock">ESL AP Controller (Mock)</string>
+    <string name="status_label">Status: %1$s</string>
+    <string name="expand">Expand</string>
+    <string name="collapse">Collapse</string>
+
+    <!-- Connect -->
+    <string name="connect_scan_ap">Scan AP</string>
+    <string name="connect_stop">Stop</string>
+    <string name="connect_mock">Connect Mock</string>
+    <string name="connect_disconnect">Disconnect</string>
+    <string name="connect_protocol_info">Protocol %1$s / FW %2$s / %3$s</string>
+    <string name="connect_capabilities">capabilities: %1$s</string>
+    <string name="connect_rssi">%1$s  RSSI %2$d</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_refresh">Refresh AP/Tag status</string>
+    <string name="dashboard_started">started=%1$s  scanning=%2$s</string>
+    <string name="dashboard_pawr">pawr_active=%1$s  tag_count=%2$d</string>
+    <string name="dashboard_phone">selected_index=%1$d  phone_link=%2$s</string>
+    <string name="dashboard_last_error">last_error=%1$s</string>
+    <string name="dashboard_recovery">boot_id=%1$s  phase=%2$s  health=%3$s</string>
+    <string name="dashboard_recommended_action">recommended_action=%1$s</string>
+    <string name="dashboard_tasks">Task queue</string>
+    <string name="dashboard_task_line">%1$s · %2$s</string>
+
+    <!-- Tags -->
+    <string name="tags_refresh">Refresh list</string>
+    <string name="tags_scan">Scan</string>
+    <string name="tags_scan_stop">Stop scan</string>
+    <string name="tags_scanned_section">Discovered Tags</string>
+    <string name="tags_inventory_section">Provisioned Tags</string>
+    <string name="tags_ap_title">AP (this gateway)</string>
+    <string name="tags_ap_detail">esl_id=%1$d · local display, not an ESL Tag</string>
+    <string name="tags_ap_hint">Cannot provision or unassociate. Display/refresh use the AP image slots.</string>
+    <string name="tags_provision">Provision</string>
+    <string name="tags_provision_group_title">Select provision Group</string>
+    <string name="tags_provision_group_body">Target: %1$s\nChoose a fixed Group (0–3). Free-form input is not supported in this demo.</string>
+    <string name="tags_provision_group_btn">Group %1$d</string>
+    <string name="tags_provision_group_cancel">Cancel</string>
+    <string name="tags_rssi_associated">rssi=%1$d associated=%2$s</string>
+    <string name="tag_detail">esl_id=%1$d group=%2$d state=%3$s</string>
+    <string name="tag_recovery_detail">phase=%1$s reason=%2$s</string>
+    <string name="tag_capabilities">image=%1$d display=%2$s led=%3$s sensor=%4$s</string>
+
+    <!-- Controls -->
+    <string name="controls_current_tag">Current Tag: %1$s (esl_id=%2$d group_id=%3$d)</string>
+    <string name="controls_current_ap">Current target: AP (esl_id=%1$d, local)</string>
+    <string name="controls_not_ready">Controls disabled (product_state=%1$s)</string>
+    <string name="controls_no_tag">No Tag selected</string>
+    <string name="controls_scope_title">Command scope</string>
+    <string name="controls_scope_selected">Selected Tag</string>
+    <string name="controls_scope_group">Entire group</string>
+    <string name="controls_group_target">Group broadcast target: group_id=%1$d (esl_id=255). AP switches the same slot.</string>
+    <string name="controls_group_label">group %1$d</string>
+    <string name="controls_ap_label">AP</string>
+    <string name="controls_ap_scope_hint">Group scope is disabled while AP is selected.</string>
+    <string name="controls_ap_pawr_hint">Ping, LED, and unassociate apply to Tags only. Display/refresh stay available for AP.</string>
+    <string name="controls_group_not_ready">Group controls disabled (no online Tag in group_id=%1$d)</string>
+    <string name="controls_group_display_only">No online Tag in group_id=%1$d. Display/refresh still go to the group and AP.</string>
+    <string name="msg_group_not_ready">No online Tag in group_id=%1$d</string>
+    <string name="msg_ap_not_a_tag">Select a Tag for this command. AP is not an ESL Tag.</string>
+    <string name="msg_ap_pawr_unsupported">Ping and LED are not available for AP.</string>
+    <string name="msg_ap_display_unsupported">This AP firmware does not support local display_image / refresh_display (esl_id=254).</string>
+    <string name="msg_ap_slot_skipped">Group command accepted; AP skipped an empty slot and did not change its screen.</string>
+    <string name="cmd_ping_title">Ping</string>
+    <string name="cmd_ping_summary">Check Tag PAwR connectivity</string>
+    <string name="cmd_ping_send">Send Ping</string>
+    <string name="cmd_led_title">LED Control</string>
+    <string name="cmd_refresh_title">Refresh Display</string>
+    <string name="cmd_refresh_summary">Refresh the Tag display content</string>
+    <string name="cmd_refresh_send">Send Refresh</string>
+    <string name="cmd_display_title">Display Image</string>
+    <string name="cmd_display_summary">Switch transferred image slot (0–3)</string>
+    <string name="cmd_display_summary_ap">Switch AP image slot (0–3). An empty slot fails.</string>
+    <string name="cmd_display_img">img %1$d</string>
+    <string name="cmd_unassociate_title">Unassociate from AP</string>
+    <string name="cmd_unassociate_summary">Remove bond and clear Tag from AP inventory</string>
+    <string name="cmd_unassociate_send">Unassociate Tag</string>
+    <string name="cmd_unassociate_confirm_title">Unassociate Tag?</string>
+    <string name="cmd_unassociate_confirm_body">Tag esl_id=%1$d will be unassociated from this AP. The Tag returns to unassociated advertising and is removed from the provisioned list.</string>
+    <string name="cmd_unassociate_confirm_ok">Unassociate</string>
+    <string name="cmd_unassociate_confirm_cancel">Cancel</string>
+
+    <!-- LED -->
+    <string name="led_color_presets">Color presets</string>
+    <string name="led_red">Red</string>
+    <string name="led_green">Green</string>
+    <string name="led_blue">Blue</string>
+    <string name="led_white">White</string>
+    <string name="led_off">Off</string>
+    <string name="led_level_red">Red R</string>
+    <string name="led_level_green">Green G</string>
+    <string name="led_level_blue">Blue B</string>
+    <string name="led_level_brightness">Brightness</string>
+    <string name="led_mode">Effect mode</string>
+    <string name="led_mode_steady">Steady on</string>
+    <string name="led_mode_off">Off</string>
+    <string name="led_mode_timed">Timed</string>
+    <string name="led_mode_blink">Blink</string>
+    <string name="led_duration">On duration (seconds)</string>
+    <string name="led_blink_duration">Blink duration (seconds)</string>
+    <string name="led_blink_hint">Sends one ESL flashing pattern (250 ms on/off). Tag steps the pattern locally.</string>
+    <string name="led_duration_sec">%1$ds</string>
+    <string name="led_send">Send LED command</string>
+    <string name="led_unavailable">This Tag does not report LED capability</string>
+    <string name="led_summary">LED%1$d R%2$d G%3$d B%4$d brightness %5$d %6$s</string>
+    <string name="led_summary_mode_steady">steady on</string>
+    <string name="led_summary_mode_off">off</string>
+    <string name="led_summary_mode_timed">%1$ds</string>
+    <string name="led_summary_mode_blink">blink %1$ds</string>
+
+    <!-- Image -->
+    <string name="image_epaper_title">E-paper Tag (296×128)</string>
+    <string name="image_desc">Pick a gallery image; the app converts it to 296×128 1bpp (4736B raw) before upload_image_* + OTS transfer. Demo checkerboard remains available for hardware checks.</string>
+    <string name="image_protocol">Protocol: upload_image_begin/chunk/end + transfer_image_to_tag (v0.2). Slot is set on upload_image_end.image_index; custom image_id = 1001 + slot.</string>
+    <string name="image_upload_btn">Upload demo checkerboard to selected Tag</string>
+    <string name="image_pick_btn">Choose photo from gallery</string>
+    <string name="image_clear_btn">Clear selected photo</string>
+    <string name="image_upload_custom_btn">Upload custom image and transfer to Tag</string>
+    <string name="image_slot_label">Target image slot</string>
+    <string name="image_slot_hint">AP image_id for this slot: %1$d</string>
+    <string name="image_scale_crop">Center crop</string>
+    <string name="image_scale_fit">Fit (letterbox)</string>
+    <string name="image_dither">Floyd–Steinberg dither</string>
+    <string name="image_invert">Invert black/white</string>
+    <string name="image_threshold">Threshold: %1$d (used when dither off)</string>
+    <string name="image_preview_title">1bpp preview (296×128)</string>
+    <string name="image_preview_empty">No preview yet — pick a photo.</string>
+    <string name="image_converting">Converting…</string>
+    <string name="image_convert_error">Convert failed: %1$s</string>
+    <string name="image_err_no_frame">No converted frame — pick and convert a photo first</string>
+    <string name="image_err_bad_size">Converted frame size is invalid</string>
+    <string name="badge_title">Update AP image</string>
+    <string name="badge_desc">Choose a photo, encode it as 480×480 RGB565, then display it on the connected Mosaico AP. A Full RGB Tag can still receive the same frame afterwards.</string>
+    <string name="badge_ap_waiting">Connect to a Mosaico AP that advertises badge image commands. Hello must include upload_badge_image_begin and transfer_badge_image_to_tag.</string>
+    <string name="badge_slot_label">Badge image slot</string>
+    <string name="badge_pick_btn">Choose badge image</string>
+    <string name="badge_preview_title">Badge preview (480×480)</string>
+    <string name="badge_upload_ap_btn">Upload badge image and display on AP</string>
+    <string name="badge_upload_btn">Upload badge image and transfer to Tag</string>
+    <string name="badge_err_no_frame">No converted badge frame — choose an image first</string>
+    <string name="badge_err_unsupported_ap">Connected AP does not advertise badge image commands</string>
+    <string name="badge_err_unsupported_tag">Selected Tag is not a Full RGB 480×480 badge</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_language_system">System default</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_language_zh">中文</string>
+    <string name="settings_language_hint">App UI language. The activity may restart when changed.</string>
+
+    <!-- ViewModel messages -->
+    <string name="msg_select_tag">Select a Tag first</string>
+    <string name="msg_busy">Busy: %1$s</string>
+    <string name="msg_done">Done: %1$s</string>
+    <string name="msg_provision_started">Provision started, esl_id=%1$d group_id=%2$d</string>
+    <string name="msg_unassociate_started">Unassociate started for esl_id=%1$d</string>
+    <string name="busy_scan_devices">Scan devices</string>
+    <string name="busy_stop_scan">Stop scan</string>
+    <string name="busy_connect">Connect %1$s</string>
+    <string name="busy_disconnect">Disconnect</string>
+    <string name="busy_refresh_status">Refresh status</string>
+    <string name="busy_load_tags">Load Tags</string>
+    <string name="busy_esl_scan">Start ESL scan</string>
+    <string name="busy_esl_scan_stop">Stop ESL scan</string>
+    <string name="busy_provision">Provision %1$s</string>
+    <string name="busy_badge_ap">Upload image to AP</string>
+</resources>

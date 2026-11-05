@@ -1,0 +1,36 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Background Squircle -->
+    <path
+        android:fillColor="#0A192F"
+        android:pathData="M24,4 C12.95,4 4,12.95 4,24 L4,84 C4,95.05 12.95,104 24,104 L84,104 C95.05,104 104,95.05 104,84 L104,24 C104,12.95 95.05,4 84,4 Z"/>
+
+    <!-- Espressif Orange Accent Core -->
+    <path
+        android:fillColor="#FF6600"
+        android:pathData="M54,22 C73.88,22 90,38.12 90,58 C90,77.88 73.88,94 54,94 C34.12,94 18,77.88 18,58 C18,38.12 34.12,22 54,22 Z"
+        android:fillAlpha="0.25"/>
+
+    <!-- Inner Chip Body -->
+    <path
+        android:fillColor="#FF6600"
+        android:pathData="M38,38 L70,38 L70,78 L38,78 Z"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:strokeLineJoin="round"/>
+
+    <!-- Pin lines on chip -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M30,46 L38,46 M30,58 L38,58 M30,70 L38,70 M70,46 L78,46 M70,58 L78,58 M70,70 L78,70 M46,30 L46,38 M58,30 L58,38 M46,78 L46,86 M58,78 L58,86"/>
+
+    <!-- Center BLE / WiFi Signal Waves / Text E -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M46,48 L58,48 L58,54 L48,54 L48,60 L58,60 L58,66 L46,66 Z"/>
+</vector>

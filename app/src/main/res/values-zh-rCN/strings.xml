@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">espbleapp</string>
+
+    <!-- App Launcher -->
+    <string name="launcher_title">选择程序</string>
+    <string name="launcher_subtitle">请选择要进入的程序</string>
+    <string name="app_esl_name">ESL 控制器</string>
+    <string name="app_esl_desc">电子价签 AP 网关与标签管理</string>
+    <string name="app_flux_name">Flux Data Transfer</string>
+    <string name="app_flux_desc">基于 Flux 协议进行数据传输</string>
+    <string name="app_file_transfer_name">GMP 文件传输</string>
+    <string name="app_file_transfer_desc">基于 GMP 与 Flux 协议进行文件传输</string>
+    <string name="app_gmp_ota_name">GMP OTA</string>
+    <string name="app_gmp_ota_desc">基于 GMP 与 Flux 协议的 BLE 固件 OTA 升级</string>
+    <string name="back_to_launcher">返回程序选择</string>
+    <string name="launch_app">进入</string>
+
+    <!-- GMP OTA App -->
+    <string name="gmp_ota_title">GMP OTA</string>
+
+    <!-- Flux App -->
+    <string name="flux_title">Flux 数据传输</string>
+    <string name="flux_status_running">状态: 运行中</string>
+    <string name="flux_nav_dashboard">控制台</string>
+    <string name="flux_nav_effects">效果预设</string>
+    <string name="flux_nav_settings">设置</string>
+    <string name="flux_speed_label">流速: %1$d FPS</string>
+    <string name="flux_intensity_label">强度: %1$d%%</string>
+    <string name="flux_mode_aurora">极光波浪</string>
+    <string name="flux_mode_pulse">脉冲流体</string>
+    <string name="flux_mode_neon">霓虹流光</string>
+    <string name="flux_mode_spectrum">光谱渐变</string>
+
+    <!-- Flux File Transfer App -->
+    <string name="file_transfer_title">GMP 文件传输</string>
+    <string name="file_select_btn">选择文件</string>
+    <string name="file_no_selected">未选择文件</string>
+    <string name="file_selected_info">已选择: %1$s (%2$d 字节)</string>
+    <string name="file_send_btn">发送文件</string>
+    <string name="flux_nav_scan">扫描与连接</string>
+    <string name="flux_nav_send">数据传输</string>
+    <string name="flux_nav_logs">日志</string>
+    <string name="flux_status_connected">已连接</string>
+    <string name="flux_status_disconnected">未连接</string>
+    <string name="flux_status_connecting">正在连接…</string>
+    <string name="flux_scan_start">开始扫描</string>
+    <string name="flux_scan_stop">停止扫描</string>
+    <string name="flux_filter_service">仅过滤 Flux 服务 (0xABF0)</string>
+    <string name="gmp_filter_service">仅过滤 GMP 文件传输服务 (01000008-…)</string>
+    <string name="gmp_ota_filter_service">仅过滤 GMP OTA 服务 (a0eeffc0-…)</string>
+    <string name="gmp_selected_file">已选择: %1$s</string>
+    <string name="gmp_ready_to_send">可以发送</string>
+    <string name="gmp_hashing">正在计算哈希…</string>
+    <string name="gmp_negotiating">正在协商传输…</string>
+    <string name="gmp_confirmed_bytes">已确认: %1$d / %2$d 字节</string>
+    <string name="gmp_verifying">正在校验…</string>
+    <string name="gmp_complete">传输完成</string>
+    <string name="gmp_cancelled">传输已取消</string>
+    <string name="gmp_cancel">取消</string>
+    <string name="gmp_peer_rejected">对端拒绝了传输</string>
+    <string name="gmp_error_low_mtu">MTU 低于最低要求</string>
+    <string name="gmp_error_missing_service">未找到 GMP 文件传输服务</string>
+    <string name="gmp_error_missing_characteristic">未找到 GMP RX 或 TX 特征</string>
+    <string name="gmp_error_timeout">传输超时</string>
+    <string name="gmp_error_invalid_name">文件名必须为 1 到 32 个 UTF-8 字节</string>
+    <string name="gmp_stage_idle">空闲</string>
+    <string name="gmp_stage_connecting">正在连接…</string>
+    <string name="gmp_stage_requesting_mtu">正在请求 MTU…</string>
+    <string name="gmp_stage_discovering_services">正在发现服务…</string>
+    <string name="gmp_stage_enabling_notifications">正在启用通知…</string>
+    <string name="gmp_stage_ready">就绪</string>
+    <string name="gmp_performance_title">GMP 传输指标</string>
+    <string name="gmp_elapsed_time">耗时: %1$d ms</string>
+    <string name="gmp_elapsed_time_sec">耗时: %1$.2f 秒</string>
+    <string name="gmp_avg_throughput">平均确认速率: %1$.1f KB/s</string>
+    <string name="flux_connected_device">已连接: %1$s (%2$s)</string>
+    <string name="flux_mtu_label">MTU 大小: %1$d</string>
+    <string name="flux_disconnect">断开</string>
+    <string name="flux_connect">连接</string>
+    <string name="flux_send_text_hint">输入要通过 Flux 发送的文本内容…</string>
+    <string name="flux_send_btn">发送</string>
+    <string name="flux_test_482b">发送 482 字节</string>
+    <string name="flux_test_4kb">发送 4 KB</string>
+    <string name="flux_test_16kb">发送 16 KB</string>
+    <string name="flux_progress_label">已发送: %1$d / %2$d 字节 (%3$d%%) · %4$.1f KB/s</string>
+    <string name="flux_performance_title">Flux 传输性能指标</string>
+    <string name="flux_elapsed_time">耗时: %1$d ms</string>
+    <string name="flux_elapsed_time_sec">耗时: %1$.2f 秒</string>
+    <string name="flux_avg_speed">平均速率: %1$.1f KB/s</string>
+    <string name="flux_transferred_size">数据大小: %1$d 字节</string>
+    <string name="flux_ack_status_confirmed">已收到完整 ACK 确认</string>
+    <string name="flux_ack_status_waiting">等待 ACK 确认…</string>
+    <string name="flux_received_section">接收到的重组数据</string>
+    <string name="flux_no_devices">未发现 BLE 设备，请点击“开始扫描”。</string>
+    <string name="flux_clear_logs">清空日志</string>
+
+    <string name="nav_connect">连接</string>
+    <string name="nav_dashboard">仪表盘</string>
+    <string name="nav_tags">Tags</string>
+    <string name="nav_controls">控制</string>
+    <string name="nav_image">图片</string>
+    <string name="nav_logs">日志</string>
+    <string name="nav_settings">设置</string>
+
+    <string name="title_app">ESL AP 控制器</string>
+    <string name="title_app_mock">ESL AP 控制器 (Mock)</string>
+    <string name="status_label">状态: %1$s</string>
+    <string name="expand">展开</string>
+    <string name="collapse">收起</string>
+
+    <string name="connect_scan_ap">扫描 AP</string>
+    <string name="connect_stop">停止</string>
+    <string name="connect_mock">连 Mock</string>
+    <string name="connect_disconnect">断开</string>
+    <string name="connect_protocol_info">协议 %1$s / 固件 %2$s / %3$s</string>
+    <string name="connect_capabilities">capabilities: %1$s</string>
+    <string name="connect_rssi">%1$s  RSSI %2$d</string>
+
+    <string name="dashboard_refresh">刷新 AP/Tag 状态</string>
+    <string name="dashboard_started">started=%1$s  scanning=%2$s</string>
+    <string name="dashboard_pawr">pawr_active=%1$s  tag_count=%2$d</string>
+    <string name="dashboard_phone">selected_index=%1$d  phone_link=%2$s</string>
+    <string name="dashboard_last_error">last_error=%1$s</string>
+    <string name="dashboard_recovery">boot_id=%1$s  phase=%2$s  health=%3$s</string>
+    <string name="dashboard_recommended_action">recommended_action=%1$s</string>
+    <string name="dashboard_tasks">任务队列</string>
+    <string name="dashboard_task_line">%1$s · %2$s</string>
+
+    <string name="tags_refresh">刷新列表</string>
+    <string name="tags_scan">扫描</string>
+    <string name="tags_scan_stop">停止扫描</string>
+    <string name="tags_scanned_section">扫描到的 Tag</string>
+    <string name="tags_inventory_section">已配网 Tag</string>
+    <string name="tags_ap_title">AP（本机网关）</string>
+    <string name="tags_ap_detail">esl_id=%1$d · 本机显示，不是 ESL Tag</string>
+    <string name="tags_ap_hint">不能配网或解关联。切图/刷新走 AP 自己的图片槽。</string>
+    <string name="tags_provision">配网</string>
+    <string name="tags_provision_group_title">选择配网 Group</string>
+    <string name="tags_provision_group_body">目标：%1$s\n请选择固定 Group（0–3）。本 demo 不支持自由输入。</string>
+    <string name="tags_provision_group_btn">Group %1$d</string>
+    <string name="tags_provision_group_cancel">取消</string>
+    <string name="tags_rssi_associated">rssi=%1$d associated=%2$s</string>
+    <string name="tag_detail">esl_id=%1$d group=%2$d state=%3$s</string>
+    <string name="tag_recovery_detail">phase=%1$s reason=%2$s</string>
+    <string name="tag_capabilities">image=%1$d display=%2$s led=%3$s sensor=%4$s</string>
+
+    <string name="controls_current_tag">当前 Tag: %1$s (esl_id=%2$d group_id=%3$d)</string>
+    <string name="controls_current_ap">当前目标：AP（esl_id=%1$d，本机）</string>
+    <string name="controls_not_ready">控制已禁用 (product_state=%1$s)</string>
+    <string name="controls_no_tag">未选择 Tag</string>
+    <string name="controls_scope_title">命令作用域</string>
+    <string name="controls_scope_selected">选中 Tag</string>
+    <string name="controls_scope_group">整组</string>
+    <string name="controls_group_target">组播目标：group_id=%1$d（esl_id=255）。AP 会切同一槽。</string>
+    <string name="controls_group_label">组 %1$d</string>
+    <string name="controls_ap_label">AP</string>
+    <string name="controls_ap_scope_hint">选中 AP 时不能开整组。</string>
+    <string name="controls_ap_pawr_hint">Ping、LED、解关联只对 Tag 有效。切图/刷新仍可用于 AP。</string>
+    <string name="controls_group_not_ready">整组控制已禁用（group_id=%1$d 无 online Tag）</string>
+    <string name="controls_group_display_only">group_id=%1$d 没有 online Tag。切图/刷新仍会发给整组和 AP。</string>
+    <string name="msg_group_not_ready">group_id=%1$d 内没有 online Tag</string>
+    <string name="msg_ap_not_a_tag">这条命令需要选 Tag。AP 不是 ESL Tag。</string>
+    <string name="msg_ap_pawr_unsupported">AP 不支持 Ping / LED。</string>
+    <string name="msg_ap_display_unsupported">当前 AP 固件不支持本机 display_image / refresh_display（esl_id=254）。</string>
+    <string name="msg_ap_slot_skipped">整组命令已接受；AP 该槽是空的，屏幕没有换图。</string>
+    <string name="cmd_ping_title">Ping</string>
+    <string name="cmd_ping_summary">检测 Tag PAwR 连通性</string>
+    <string name="cmd_ping_send">发送 Ping</string>
+    <string name="cmd_led_title">LED 控制</string>
+    <string name="cmd_refresh_title">Refresh Display</string>
+    <string name="cmd_refresh_summary">刷新 Tag 当前显示内容</string>
+    <string name="cmd_refresh_send">发送 Refresh</string>
+    <string name="cmd_display_title">Display Image</string>
+    <string name="cmd_display_summary">切换已传输图片槽位 (0–3)</string>
+    <string name="cmd_display_summary_ap">切换 AP 图片槽 (0–3)。空槽会失败。</string>
+    <string name="cmd_display_img">img %1$d</string>
+    <string name="cmd_unassociate_title">解除 AP 关联</string>
+    <string name="cmd_unassociate_summary">解除绑定并从 AP 清单中移除 Tag</string>
+    <string name="cmd_unassociate_send">解除关联</string>
+    <string name="cmd_unassociate_confirm_title">确认解除关联？</string>
+    <string name="cmd_unassociate_confirm_body">将解除 esl_id=%1$d 与此 AP 的关联。Tag 会回到未关联广播状态，并从已配网列表中移除。</string>
+    <string name="cmd_unassociate_confirm_ok">解除关联</string>
+    <string name="cmd_unassociate_confirm_cancel">取消</string>
+
+
+    <string name="led_color_presets">颜色预设</string>
+    <string name="led_red">红</string>
+    <string name="led_green">绿</string>
+    <string name="led_blue">蓝</string>
+    <string name="led_white">白</string>
+    <string name="led_off">关</string>
+    <string name="led_level_red">红 R</string>
+    <string name="led_level_green">绿 G</string>
+    <string name="led_level_blue">蓝 B</string>
+    <string name="led_level_brightness">亮度</string>
+    <string name="led_mode">灯效模式</string>
+    <string name="led_mode_steady">常亮</string>
+    <string name="led_mode_off">关闭</string>
+    <string name="led_mode_timed">定时</string>
+    <string name="led_mode_blink">闪烁</string>
+    <string name="led_duration">亮灯时长（秒）</string>
+    <string name="led_blink_duration">闪烁时长（秒）</string>
+    <string name="led_blink_hint">单条 ESL flashing pattern（250 ms 亮/灭），由 Tag 本地按 bit 执行。</string>
+    <string name="led_duration_sec">%1$ds</string>
+    <string name="led_send">发送 LED 命令</string>
+    <string name="led_unavailable">当前 Tag 未声明 LED 能力</string>
+    <string name="led_summary">LED%1$d R%2$d G%3$d B%4$d 亮度%5$d %6$s</string>
+    <string name="led_summary_mode_steady">常亮</string>
+    <string name="led_summary_mode_off">关闭</string>
+    <string name="led_summary_mode_timed">%1$d秒</string>
+    <string name="led_summary_mode_blink">闪烁 %1$d秒</string>
+
+    <string name="image_epaper_title">电子价签 Tag（296×128）</string>
+    <string name="image_desc">从相册选图后，APP 会先转为 296×128 1bpp（4736B raw），再走 upload_image_* + OTS 下发。演示棋盘格仍可用于硬件校验。</string>
+    <string name="image_protocol">协议：upload_image_begin/chunk/end + transfer_image_to_tag（v0.2）。槽位由 upload_image_end.image_index 决定；自定义 image_id = 1001 + 槽位。</string>
+    <string name="image_upload_btn">上传演示棋盘格并传给选中 Tag</string>
+    <string name="image_pick_btn">从相册选择图片</string>
+    <string name="image_clear_btn">清除已选图片</string>
+    <string name="image_upload_custom_btn">上传自定义图并传给选中 Tag</string>
+    <string name="image_slot_label">目标图像槽位</string>
+    <string name="image_slot_hint">该槽位对应 AP image_id：%1$d</string>
+    <string name="image_scale_crop">居中裁剪</string>
+    <string name="image_scale_fit">完整适配（留白）</string>
+    <string name="image_dither">Floyd–Steinberg 抖动</string>
+    <string name="image_invert">黑白反色</string>
+    <string name="image_threshold">阈值：%1$d（关闭抖动时生效）</string>
+    <string name="image_preview_title">1bpp 预览（296×128）</string>
+    <string name="image_preview_empty">尚无预览 — 请先选图。</string>
+    <string name="image_converting">正在转换…</string>
+    <string name="image_convert_error">转换失败：%1$s</string>
+    <string name="image_err_no_frame">还没有转换结果 — 请先选图并完成转换</string>
+    <string name="image_err_bad_size">转换后的帧长度无效</string>
+    <string name="badge_title">更换 AP 图片</string>
+    <string name="badge_desc">选一张图，编码为 480×480 RGB565，然后显示在已连接的 Mosaico AP 上。同一帧仍可再传给 Full RGB Tag。</string>
+    <string name="badge_ap_waiting">请先连接声明了吧唧图片命令的 Mosaico AP。hello 需包含 upload_badge_image_begin 和 transfer_badge_image_to_tag。</string>
+    <string name="badge_slot_label">吧唧图片槽位</string>
+    <string name="badge_pick_btn">选择吧唧图片</string>
+    <string name="badge_preview_title">吧唧预览（480×480）</string>
+    <string name="badge_upload_ap_btn">上传并在 AP 上显示</string>
+    <string name="badge_upload_btn">上传吧唧图片并传给 Tag</string>
+    <string name="badge_err_no_frame">尚无转换后的吧唧帧 — 请先选择图片</string>
+    <string name="badge_err_unsupported_ap">当前 AP 未声明吧唧图片能力</string>
+    <string name="badge_err_unsupported_tag">所选 Tag 不是 Full RGB 480×480 吧唧</string>
+
+    <string name="settings_title">设置</string>
+    <string name="settings_language">语言</string>
+    <string name="settings_language_system">跟随系统</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_language_zh">中文</string>
+    <string name="settings_language_hint">应用界面语言。更改后可能会重新启动界面。</string>
+
+    <string name="msg_select_tag">请先选择 Tag</string>
+    <string name="msg_busy">忙: %1$s</string>
+    <string name="msg_done">完成: %1$s</string>
+    <string name="msg_provision_started">配网已启动 esl_id=%1$d group_id=%2$d</string>
+    <string name="msg_unassociate_started">解除关联已启动 esl_id=%1$d</string>
+    <string name="busy_scan_devices">扫描设备</string>
+    <string name="busy_stop_scan">停止扫描</string>
+    <string name="busy_connect">连接 %1$s</string>
+    <string name="busy_disconnect">断开连接</string>
+    <string name="busy_refresh_status">刷新状态</string>
+    <string name="busy_load_tags">加载 Tag</string>
+    <string name="busy_esl_scan">启动 ESL 扫描</string>
+    <string name="busy_esl_scan_stop">停止 ESL 扫描</string>
+    <string name="busy_provision">配网 %1$s</string>
+    <string name="busy_badge_ap">上传图片到 AP</string>
+</resources>
